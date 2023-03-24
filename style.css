@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 0. NAVIGATION MENU */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 10vh;
+  width: 320px;
+  background-color: white;
+}
+
+/* 0.1. Background image */
+nav img {
+  width: 111px;
+  height: 74px;
+  left: -2px;
+  top: 0;
+}
+
+/* 0.2. Menu Burger */
+.burger {
+  display: flex;
+  width: 20px;
+  height: 14px;
+  margin-top: 19px;
+  margin-right: 14px;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #1a2236;
+}
+
+/* 1. FIRST SECTION */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 568px;
+}
+
+/* 1.1. Developer's name */
+.name h1 {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  left: 16px;
+  top: 100px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+/* 1.2. Welcome message */
+.salute p {
+  position: absolute;
+  width: 288px;
+  height: 147px;
+  left: 16px;
+  top: 215px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+/* 1.3. Contact button */
+
+.start-contact {
+  box-sizing: border-box;
+  border-style: none;
+  position: absolute;
+  width: 288px;
+  height: 50px;
+  left: 16px;
+  top: 375px;
+  color: white;
+  background: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.start-contact:hover {
+  background: #1a3336;
+}
+
+/* 1.4. Section's end image */
+.first-section-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 160px;
+}
+
+.first-section-bg img {
+  width: 320px;
+  height: 160px;
+}
+
+/* SECTION 2. PROJECTS */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project-title h1 {
+  width: 181px;
+  height: 50px;
+  left: 16px;
+  top: 672px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: #1a2236;
+}
+
+/* 2.1. Projects */
+
+/* 2.1.1 Preview image */
+.preview-img {
+  width: 320px;
+  height: 186px;
+  margin: 0;
+}
+
+.preview-img img {
+  object-fit: fill;
+  margin: 0;
+}
+
+/* 2.1.2 Description */
+.pr-description {
+  flex-direction: column;
+  width: 320px;
+  height: 156px;
+  left: 0;
+  top: 940px;
+  background: #1a2236;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.pr-description h2 {
+  width: 264px;
+  height: 16px;
+  align-self: flex-start;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.pr-description ul {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pr-description li {
+  background: #98dede;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+  align-content: center;
+  padding: 6px 10px 6px 10px;
+}
+
+.pr-description li:first-child {
+  margin-left: 20px;
+}
+
+.pr-description li:last-child {
+  margin-right: 0;
+}
+
+/* 2.1.2.2. Button */
+.pr-button {
+  margin-bottom: 3px;
+}
+
+.pr-button button {
+  width: 178px;
+  height: 44px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  border: 1px solid #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right-arrow {
+  width: 20.57px;
+  height: 15.35px;
+  left: 166px;
+  top: 1045.95px;
+}
