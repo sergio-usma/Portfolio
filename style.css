@@ -239,3 +239,91 @@ nav img {
   left: 166px;
   top: 1045.95px;
 }
+
+/* About */
+
+.curriculum {
+  width: 320px;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.curriculum h1 {
+  width: 220px;
+  height: 100px;
+  margin-left: 16px;
+  align-self: flex-start;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.curriculum p {
+  width: 288px;
+  height: 147px;
+  left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.download {
+  width: 288px;
+  height: 50px;
+  border: 0;
+  color: white;
+  background: #1a2236;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.boxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 940px;
+}
+
+.languages {
+  --bg-color:#1C528A;
+  width: 289px;
+  height: 289px;
+  color: white;
+  background: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.languages h2 {
+  align-self: flex-start;
+  margin-left: 15%;
+}
+
+.languages ul {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.background-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
