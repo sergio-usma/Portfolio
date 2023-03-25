@@ -150,8 +150,8 @@ Coming soon
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+The future features of the project will include buttons actions, that extend the information about each project, and its links to the GitHub repos. I will include an "about" page with access to the C.V. of the developer, the languages, frameworks and skills and a contact form with social media links. Also will be added a menu with links to each section of the site. 
 
-> Coming soon
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
