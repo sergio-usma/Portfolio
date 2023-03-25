@@ -43,10 +43,10 @@ nav {
 
 /* 1. FIRST SECTION */
 
-.first-section{
-    height: 568px;
-    width: 320px;
-    background-image: url(./media/image_geometry_2.png);
+.first-section {
+  height: 568px;
+  width: 320px;
+  background-image: url(./media/image_geometry_2.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
