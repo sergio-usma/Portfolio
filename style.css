@@ -4,8 +4,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  width: 320px;
+}
+
 body {
   background-color: #e5e5e5;
+  width: 320px;
 }
 
 a {
@@ -37,6 +42,7 @@ nav {
   flex-direction: column;
   align-self: flex-start;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .line {
@@ -123,17 +129,15 @@ nav {
 /* SECTION 2. PROJECTS */
 #projects {
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   background-color: #fff;
 }
 
 .project-title h1 {
   width: 181px;
   height: 50px;
-  left: 16px;
-  top: 672px;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
@@ -161,15 +165,13 @@ nav {
 
 /* 2.1.2 Description */
 .pr-description {
-  flex-direction: column;
-  width: 320px;
-  height: 156px;
-  left: 0;
-  top: 940px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 20px;
   background: #1a2236;
-  display: flex;
+  display: grid;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .pr-description h2 {
@@ -179,33 +181,31 @@ nav {
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 16px;
   color: #fff;
 }
 
 .pr-description ul {
-  display: flex;
-  justify-content: space-between;
-  width: 270px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 0.55fr 0.66fr 0.8fr;
+  grid-gap: 5px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .pr-description li {
+  width: fit-content;
   background: #98dede;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
   color: #1a2236;
-  align-content: center;
+  text-align: center;
   padding: 6px 10px 6px 10px;
 }
 
 .pr-description li:first-child {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .pr-description li:last-child {
@@ -214,32 +214,35 @@ nav {
 
 /* 2.1.2.2. Button */
 .pr-button {
-  margin-bottom: 3px;
+  margin-bottom: 20px;
+  justify-self: flex-start;
 }
 
-.pr-button button {
+.project-button {
   width: 178px;
   height: 44px;
-  margin-left: 20px;
-  margin-bottom: 5px;
   background-color: transparent;
   color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 20px;
   text-align: center;
   display: flex;
   border: 1px solid #fff;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #154c7d;
 }
 
 .right-arrow {
   width: 20.57px;
   height: 15.35px;
-  left: 166px;
-  top: 1045.95px;
+  margin-left: 12px;
 }
 
 /* About */
@@ -265,7 +268,7 @@ nav {
   height: 270px;
 }
 
-.curriculum h1 {
+.curriculum h2 {
   width: 220px;
   margin-top: 30px;
   margin-left: 16px;
@@ -360,9 +363,16 @@ nav {
   background-repeat: no-repeat;
 }
 
-.languages h2 {
+.languages h3 {
+  width: 116px;
+  height: 30px;
   align-self: flex-start;
-  margin-left: 15%;
+  margin-left: 12%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .languages ul {
@@ -388,7 +398,7 @@ nav {
   background-color: #fff;
 }
 
-.get-started h1 {
+.get-started h2 {
   margin-top: 100px;
   margin-left: 18px;
   font-family: "Playfair Display", serif;
