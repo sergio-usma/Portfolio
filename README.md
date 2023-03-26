@@ -152,7 +152,7 @@ Coming soon
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-The future features of the project will include buttons actions, that extend the information about each project, and its links to the GitHub repos. I will include an "about" page with access to the C.V. of the developer, the languages, frameworks and skills and a contact form with social media links. Also will be added a menu with links to each section of the site. 
+The future features of the project will include button actions, using JavaScript for the links to be functional, and a better menu with transitions and interactions using JavaScript. The projects section will be updated with real projects. The page will be active for mobile devices, tablets, and PCs using responsive web and media queries.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
