@@ -86,7 +86,7 @@ Coming soon
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Acces to the live demo! https://sergio-usma.github.io/portfolio/
+Access to the live demo! https://sergio-usma.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
