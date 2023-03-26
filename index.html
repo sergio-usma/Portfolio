@@ -225,54 +225,113 @@
     </section>
 
     <section id="second-section" class="curriculum">
-      <h1>About</h1>
+      <div class="about-section">
+        <h1>About</h1>
 
-      <p>
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hesitate to contact me.
-      </p>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hesitate to contact me.
+        </p>
 
-      <a href="#" target="_blank"
-        ><button type="button" class="download">
-          Get my CV
-          <img class="download_icon" src="./media/CV_download.png" /></button
-      ></a>
+        <a href="#" target="_blank"
+          ><button type="button" class="download">
+            Get my CV
+            <img class="download_icon" src="./media/CV_download.png" /></button
+        ></a>
+      </div>
 
       <div class="boxes">
-        <div class="languages" style="--bg-color: #1c528a">
+        <div class="languages basics">
           <h2>Languages</h2>
-          <ul>
-            <li>JavaScript (ES5/ES6)</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <img class="background-icon" src="./media/hash_icon.png" />
+          <div class="lists">
+            <ul>
+              <li>JavaScript (ES5/ES6)</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="languages" style="--bg-color: #e2505c">
+        <div class="languages frameworks">
           <h2>Frameworks</h2>
-          <ul>
-            <li>React.js</li>
-            <li>Ruby on rails</li>
-            <li>RSpec</li>
-            <li>Capibara</li>
-          </ul>
-          <img class="background-icon" src="./media/frameworks_bg.png" />
+          <div class="lists">
+            <ul>
+              <li>React.js</li>
+              <li>Ruby on rails</li>
+              <li>RSpec</li>
+              <li>Capibara</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="languages" style="--bg-color: #febf52">
+        <div class="languages skills">
           <h2>Skills</h2>
-          <ul>
-            <li>Database Management</li>
-            <li>CLI</li>
-            <li>API Design</li>
-            <li>Version Control</li>
-            <li>Web Development</li>
-          </ul>
-          <img class="background-icon" src="./media/skills_icon.png" />
+          <div class="lists">
+            <ul>
+              <li>Database Management</li>
+              <li>CLI</li>
+              <li>API Design</li>
+              <li>Version Control</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="get-started">
+      <h1>Get started</h1>
+
+      <p>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </p>
+
+      <div class="contact-form">
+        <form>
+          <div>
+            <label class="label" for="name">Your name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label class="label" for="email">Your email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label class="label" for="message">Your message:</label>
+            <textarea id="message" name="message">
+ Enter your message here..</textarea
+            >
+          </div>
+
+          <button type="submit">Start collaboration</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="get-resume">
+      <div class="cv">
+        <div>
+          <a href="#" class="cv-link">
+            Get my Resume
+            <img class="external-link" src="./media/ext-link.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <ul>
+          <li class="element"><i class="fab fa-stack-overflow"></i></li>
+          <li class="element"><i class="fab fa-github"></i></li>
+          <li class="element"><i class="fab fa-twitter"></i></li>
+          <li class="element"><i class="fab fa-linkedin"></i></li>
+          <li class="element"><i class="fab fa-medium"></i></li>
+          <li class="element"><i class="far fa-hand-peace"></i></li>
+        </ul>
       </div>
     </section>
   </body>
