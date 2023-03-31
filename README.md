@@ -1,7 +1,5 @@
 <a name="Project's Portfolio \n Sergio Usma"></a>
 
-This is a test
-
 <!--
 HOW TO USE:
 This is an example of how you may give instructions on setting up your project locally.
