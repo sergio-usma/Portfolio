@@ -1,7 +1,12 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
+  max-width: 915px;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,12 +23,16 @@ nav {
   justify-content: flex-end;
   align-items: flex-start;
   max-height: 75px;
-  height: 18vh;
+  height: 22vh;
   width: 100vw;
   background-color: #fff;
   background-image: url("./media/image_geometry_1.png");
   border: none;
   background-repeat: no-repeat;
+}
+
+nav ul {
+  display: none;
 }
 
 /* 0.1. Background image */
@@ -51,29 +60,31 @@ nav {
 
 .first-section {
   height: 90vh;
-  min-height: 630px;
-  max-height: 700px;
-  width: 100vw;
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-image: url(./media/image_geometry_2.png);
   background-size: 375px 188px;
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #fff;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
 }
 
 .about-me {
-  height: 568px;
-  align-self: center;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 /* 1.1. Developer's name */
 .name h1 {
-  position: absolute;
-  left: 8vw;
-  top: 130px;
+  width: 220px;
+  height: 140px;
+  margin-top: 20%;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
@@ -84,12 +95,8 @@ nav {
 
 /* 1.2. Welcome message */
 .salute p {
-  position: absolute;
-  max-width: 300px;
-  width: 86vw;
-  height: 147px;
-  left: 8vw;
-  top: 260px;
+  width: 288px;
+  height: 170px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -102,14 +109,12 @@ nav {
 /* 1.3. Contact button */
 
 .start-contact {
+  margin-top: 17px;
   box-sizing: border-box;
   border-style: none;
-  position: absolute;
   width: 86vw;
   max-width: 300px;
   height: 50px;
-  left: 8vw;
-  top: 430px;
   color: white;
   background: #1a2236;
   font-family: "Poppins", sans-serif;
@@ -127,10 +132,10 @@ nav {
 
 /* SECTION 2. PROJECTS */
 #projects {
-  width: 100vw;
+  width: 100%;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   background-color: #fff;
 }
 
@@ -140,15 +145,15 @@ nav {
 
 .project-title h1 {
   width: 181px;
-  height: 50px;
+  height: 60px;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
+  margin-top: 30px;
+  margin-bottom: 17px;
   margin-left: 8vw;
-  margin-bottom: 32px;
-  margin-top: 32px;
   color: #1a2236;
 }
 
@@ -156,27 +161,26 @@ nav {
 
 .all-projects {
   grid-area: 2 / 1;
+  justify-content: center;
 }
 
 /* 2.1.1 Preview image */
 .preview-img {
-  width: auto;
-  min-width: 320px;
-  height: 230px;
-  min-height: 186px;
-  margin: 0;
+  max-height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview-img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 /* 2.1.2 Description */
 .pr-description {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 30vw;
   grid-template-rows: auto auto;
   background: #1a2236;
   align-items: flex-start;
@@ -259,27 +263,34 @@ nav {
 
 .about-section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 80vw;
   grid-template-rows: auto auto;
   background-color: #fff;
-  width: 100vw;
+  width: 100%;
   height: auto;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 10vw;
+  justify-content: center;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-section h2 {
-  width: 220px;
+  width: 288px;
   margin-top: 30px;
   margin-bottom: 20px;
-  align-self: flex-start;
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
+  text-align: left;
   line-height: 100%;
   color: #1a2236;
+  align-self: center;
 }
 
 .about-section p {
@@ -323,11 +334,13 @@ nav {
 
 .boxes {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-row-gap: 16px;
   margin-top: 27px;
   margin-bottom: 27px;
+  align-items: center;
+  justify-content: center;
 }
 
 .lists {
@@ -397,15 +410,19 @@ nav {
   border: none;
   background-repeat: no-repeat;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .contact-description {
-  height: 40vh;
-  max-height: 240px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 14px;
 }
 
 .get-started h2 {
@@ -415,24 +432,24 @@ nav {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  margin-left: 8vw;
-  margin-top: 16vh;
+  margin-top: 90px;
 }
 
 .get-started p {
-  width: 300px;
-  height: 63px;
-  margin-left: 8vw;
+  width: 305px;
   margin-top: 2vh;
 }
 
 .contact-form {
+  width: 305px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  margin-top: 25px;
-  margin-left: 8vw;
+}
+
+.contact-form div {
+  width: 100%;
 }
 
 .label {
@@ -450,7 +467,7 @@ nav {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 275px;
+  width: 305px;
   border-radius: 5px;
   background: #fff;
   border: 1px solid #dfdfe0;
@@ -549,16 +566,41 @@ button[type="submit"]:hover {
 
 /* ------------------------------------------ */
 
-@media screen and (min-width: 800px) and (max-width: 1180px) {
+@media screen and (min-width: 720px) and (max-width: 915px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+
+    /*  background-image: none; */
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    list-style: none;
+    width: 60vw;
+  }
+
+  .burger {
+    display: none;
+  }
+
   .first-section {
-    height: 43vh;
-    min-height: 430px;
-    max-height: 450px;
     width: 100vw;
-    background-position: center;
-    background-position-x: 50vw;
+    height: 43vh;
+    min-height: 450px;
+    max-height: 460px;
     display: flex;
     align-items: center;
+    background-image: url(./media/Thur.png);
+    background-size: 45% 90%;
+    background-repeat: no-repeat;
+    background-position: center right;
   }
 
   #projects {
@@ -573,6 +615,10 @@ button[type="submit"]:hover {
     grid-area: 1 / 1;
   }
 
+  .project-title h1 {
+    margin-top: 10px;
+  }
+
   .all-projects {
     grid-area: 2 / 1;
     display: grid;
@@ -580,6 +626,16 @@ button[type="submit"]:hover {
     row-gap: 17px;
     padding-left: 8vw;
     padding-right: 8vw;
+  }
+
+  .pr-description {
+    display: grid;
+    grid-template-columns: 30vw;
+    grid-template-rows: auto auto;
+    background: #1a2236;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
   }
 
   .about-section {
@@ -591,34 +647,19 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-info h2 {
-    align-self: center;
-    margin-left: 0;
-    padding: 0;
-  }
-
   .boxes {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 289px 289px;
     grid-row-gap: 0;
-
-    /*   margin-top: 27px;
-  margin-bottom: 27px; */
+    height: auto;
   }
 
-  .boxes > div:nth-child(4) {
+  .boxes:nth-child(2n + 2) {
     background-image: url("./media/image_dots.png");
-    background-size: 222.02px 222px;
-    background-position: right bottom;
     background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 222.02px 222px;
   }
 
   .get-started {
@@ -628,6 +669,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .get-started h2 {
