@@ -59,7 +59,7 @@ nav ul {
 /* 1. FIRST SECTION */
 
 .first-section {
-  height: 90vh;
+  height: 95vh;
   max-height: 650px;
   display: flex;
   flex-direction: column;
