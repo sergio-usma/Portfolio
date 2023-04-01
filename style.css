@@ -135,7 +135,7 @@ nav ul {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100%;
+  grid-template-rows: auto;
   background-color: #fff;
 }
 
@@ -190,7 +190,7 @@ nav ul {
 
 .pr-description h2 {
   width: 264px;
-  height: 16px;
+  height: 20px;
   align-self: flex-start;
   font-weight: 300;
   font-size: 20px;
@@ -281,7 +281,7 @@ nav ul {
 
 .about-section h2 {
   width: 288px;
-  height: 60px;
+  height: 65px;
   margin-top: 30px;
   margin-bottom: 20px;
   font-family: "Playfair Display", serif;
