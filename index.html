@@ -302,10 +302,10 @@
         </p>
       </div>
 
-      <form class="contact-form">
+      <form class="contact-form" action="https://formspree.io/f/xknaqawg" method="POST">
         <div>
           <label class="label" for="name">Your name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" maxlength="30" required />
         </div>
 
         <div>
@@ -315,7 +315,7 @@
 
         <div>
           <label class="label" for="message">Your message:</label>
-          <textarea id="message" name="message">
+          <textarea id="message" name="message" maxlength="500">
  Enter your message here..</textarea
           >
         </div>
