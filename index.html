@@ -20,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -27,10 +28,10 @@
       <!-- 0. NAVIGATION MENU -->
       <nav>
         <!-- 0.2. Menu Burger -->
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div class="nav__burger">
+          <div class="nav__burger__line"></div>
+          <div class="nav__burger__line"></div>
+          <div class="nav__burger__line"></div>
         </div>
 
         <ul>
@@ -41,16 +42,16 @@
         </ul>
       </nav>
     </header>
+
     <!-- SECTION 1. ABOUT -->
     <section id="about" class="first-section">
-      <div class="about-me">
+      <div class="first-section__container">
         <!-- 1.1. Developer's name -->
-        <div class="name">
-          <h1>
-            Sergio<br />
-            Usma
-          </h1>
-        </div>
+        <h1>
+          Sergio<br />
+          Usma
+        </h1>
+
         <!-- 1.2. Welcome message -->
         <div class="salute">
           <p>
@@ -61,7 +62,6 @@
             hesitate to contact me.
           </p>
         </div>
-
         <!-- 1.3. Contact button -->
         <a
           href="https://www.linkedin.com/in/sergiousma"
@@ -74,166 +74,169 @@
       </div>
     </section>
 
-    <!-- SECTION 2. PROJECTS -->
-    <section id="projects" class="second-section">
-      <div class="project-title">
-        <h1>Projects</h1>
-      </div>
-
-      <div class="all-projects">
-        <!-- 2.1. Project #1 -->
-        <!-- 2.1.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project.png" width="320px" />
+    <!-- PROJECT'S SECTION -->
+    <section id="projects">
+      <div class="projects__container">
+        <div class="projects__header">
+          <h2>Projects</h2>
         </div>
-        <!-- 2.1.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.1.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+
+        <!-- Project No. 1 -->
+        <article class="project__card card--1">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_1.jpg" alt="" />
+          </picture>
+
+          <div class="project__card__content">
+            <h3>Project name goes here</h3>
+
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project
+                <picture
+                  ><source
+                    media="(min-width: 960px)"
+                    srcset="./assets/ico/right-arrow-dark.png" />
+                  <img src="./assets/ico/right-arrow.png" /></picture
+              ></a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- End of project -->
+        <!-- Project No. 2 -->
+        <article class="project__card card--2">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_2.jpg" alt="" />
+          </picture>
 
-        <!-- 2.2. Project #2 -->
+          <div class="project__card__content">
+            <h3>Project name goes here</h3>
 
-        <!-- 2.2.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project-1.png" width="320px" />
-        </div>
-        <!-- 2.2.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.2.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project <img src="./assets/ico/right-arrow.png"
+              /></a>
+            </div>
           </div>
-        </div>
-        <!-- End of project -->
+        </article>
 
-        <!-- 2.3. Project #3 -->
+        <!-- Project No. 3 -->
+        <article class="project__card card--3">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_3.jpg" alt="" />
+          </picture>
 
-        <!-- 2.3.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project-2.png" width="320px" />
-        </div>
-        <!-- 2.3.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.3.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+          <div class="project__card__content">
+            <h3>Project name goes here</h3>
+
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project <img src="./assets/ico/right-arrow.png"
+              /></a>
+            </div>
           </div>
-        </div>
-        <!-- End of project -->
+        </article>
 
-        <!-- 2.4. Project #2 -->
+        <!-- Project No. 4 -->
+        <article class="project__card card--4">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_4.jpg" alt="" />
+          </picture>
 
-        <!-- 2.4.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project-3.png" width="320px" />
-        </div>
-        <!-- 2.4.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.4.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+          <div class="project__card__content">
+            <h3>Project name goes here</h3>
+
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project <img src="./assets/ico/right-arrow.png"
+              /></a>
+            </div>
           </div>
-        </div>
-        <!-- End of project -->
+        </article>
 
-        <!-- 2.5. Project #2 -->
+        <!-- Project No. 5 -->
+        <article class="project__card card--5">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_5.jpg" alt="" />
+          </picture>
 
-        <!-- 2.5.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project-4.png" width="320px" />
-        </div>
-        <!-- 2.5.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.5.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+          <div class="project__card__content">
+            <h3>Project name goes here</h3>
+
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project
+                <picture
+                  ><source
+                    media="(min-width: 960px)"
+                    srcset="./assets/ico/right-arrow-dark.png" />
+                  <img src="./assets/ico/right-arrow.png" /></picture
+              ></a>
+            </div>
           </div>
-        </div>
-        <!-- End of project -->
+        </article>
 
-        <!-- 2.6. Project #2 -->
+        <!-- Project No. 6 -->
+        <article class="project__card card--6">
+          <picture class="project__card__picture">
+            <img src="./assets/img/project_6.jpg" alt="" />
+          </picture>
 
-        <!-- 2.6.1 Preview image -->
-        <div class="preview-img">
-          <img src="./media/Project-5.png" width="320px" />
-        </div>
-        <!-- 2.6.2 Description -->
-        <div class="pr-description">
-          <h2>Project name goes here</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- 2.6.2.1. Button -->
-          <div class="pr-button">
-            <a href="#" target="_blank"
-              ><button class="project-button" type="button">
-                See this project
-                <img class="right-arrow" src="./media/Union.png" /></button
-            ></a>
+          <div class="project__card__content">
+            <h3>6. Project name goes here</h3>
+
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project__card__button">
+              <a href="#" target="_blank"
+                >See this project <img src="./assets/ico/right-arrow.png"
+              /></a>
+            </div>
           </div>
-        </div>
-        <!-- End of project -->
+        </article>
+
+        <div class="projects__container--fig-1"></div>
+        <div class="projects__container--fig-2"></div>
+        <div class="projects__container--fig-3"></div>
       </div>
     </section>
 
     <section id="second-section" class="about-section">
+      <div class="second-section__container">
       <div class="about-info">
         <h2>About</h2>
 
@@ -246,7 +249,7 @@
         <a href="#" target="_blank"
           ><button type="button" class="download">
             Get my CV
-            <img class="download_icon" src="./media/CV_download.png" /></button
+            <img class="download_icon" src="./assets/ico/ic_download.png" /></button
         ></a>
       </div>
 
@@ -290,81 +293,88 @@
 
         <div class="background-img2"></div>
       </div>
+    </div>
     </section>
 
     <section class="get-started">
-      <div class="contact-description">
-        <h2>Get started</h2>
+      <div class="get-started__container">
+        <div class="contact-description">
+          <h2>Get started</h2>
 
-        <p>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </p>
-      </div>
-
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/xknaqawg"
-        method="POST"
-      >
-        <div>
-          <label class="label" for="name">Your name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            maxlength="30"
-            required
-          />
+          <p>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
         </div>
 
-        <div>
-          <label class="label" for="email">Your email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter Email"
-            required
-          />
-        </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xknaqawg"
+          method="POST"
+        >
+          <div>
+            <label class="label" for="name">Your name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              maxlength="30"
+              required
+            />
+          </div>
 
-        <div>
-          <label class="label" for="message">Your message:</label>
-          <textarea 
-            id="message"
-            name="message"
-            placeholder="Enter your message"
-            required
-            maxlength="500"></textarea
-          >
-        </div>
+          <div>
+            <label class="label" for="email">Your email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
 
-        <button type="submit">Start collaboration</button>
-      </form>
-    </section>
+          <div class="form__message">
+            <label class="label" for="message">Your message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+              maxlength="500"
+            ></textarea>
+          </div>
 
-    <section class="get-resume">
-      <div class="cv">
-        <div>
-          <a href="#" class="cv-link">
-            Get my Resume
-            <img class="external-link" src="./media/ext-link.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="social-media">
-        <ul>
-          <li class="element"><i class="fab fa-stack-overflow"></i></li>
-          <li class="element"><i class="fab fa-github"></i></li>
-          <li class="element"><i class="fab fa-twitter"></i></li>
-          <li class="element"><i class="fab fa-linkedin"></i></li>
-          <li class="element"><i class="fab fa-medium"></i></li>
-          <li class="element"><i class="far fa-hand-peace"></i></li>
-        </ul>
+          <div class="button__form">
+            <button type="submit">Start collaboration</button>
+          </div>
+        </form>
       </div>
     </section>
+
+    <footer>
+      <div class="footer__container">
+      
+          <div class="cv">
+            <a href="#" class="cv-link">
+              Get my Resume
+              <img class="external-link" src="./assets/ico/ext-link.png" />
+            </a>
+          </div>
+      
+
+        <div class="social-media">
+          <ul>
+            <li class="element"><i class="fab fa-stack-overflow"></i></li>
+            <li class="element"><i class="fab fa-github"></i></li>
+            <li class="element"><i class="fab fa-twitter"></i></li>
+            <li class="element"><i class="fab fa-linkedin"></i></li>
+            <li class="element"><i class="fab fa-medium"></i></li>
+            <li class="element"><i class="far fa-hand-peace"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
